@@ -1,0 +1,179 @@
+.cont{
+    width: 80%;
+    height: fit-content;
+    margin: 0 auto;
+    padding: 40px 5px;
+    overflow: scroll;
+}
+.cont .hold{
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+}
+.welcome{
+    width: 100%;
+    max-width: 500px;
+    /* line-height: 50px; */
+    position: relative;
+    width: 100%;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.h{
+    font-size: 24px;
+    color: #000;
+    padding-top: 10px;
+    font-family: MTNBrighterSans-Medium;
+    /* font-weight: 200; */
+}
+strong{
+    font-weight: 900;
+}
+p{
+    color: #000;
+    font-size: 14px;
+    width: 80%;
+    margin: 0 0 25px;
+    /* white-space: wrap; */
+    font-family:  MTNBrighterSans-Regular;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.switch{
+    width: 100%;
+    max-width: 250px;
+    height: 50px;
+    background-color: #dbd9d9;
+    /* opacity: 0.2; */
+    border-radius: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    /* margin-bottom: 50px; */
+}
+.switch div{
+    color: #000;
+    /* width: 50%; */
+    border-radius: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* background-color: #fc0; */
+    padding: 0 20px;
+    display: flex;
+    justify-content: inherit;
+    align-items: center;
+}
+
+.switch div:hover{
+    background-color: #fc0;
+
+}
+.slider{
+    width: 100%;
+    max-width: 600px;
+    height: 150px;
+    max-height: 500px;
+}
+.slider div{
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    position: relative;
+    border-bottom: 2px solid #999;
+}
+
+.slider div>div{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fc0;
+    font-size: 26px;
+    border: none;
+    cursor: pointer;
+    
+}
+.slider div>h1{
+    width: 80%;
+    text-align: left;
+    color: #222;
+    font-size: 20px;
+    padding: 10px 1px;
+    white-space: nowrap;
+}
+.slider div>p{
+    width: 100%;
+    text-align: left;
+    color: #222;
+    font-size: 14px;
+    padding: 10px;
+    overflow: scroll;
+}
+@keyframes slide1 {
+    0%{
+        height: 50%;
+    }
+    100%{
+        height: 100%;
+    }
+}
+.select {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .select.active {
+    background-color: #fc0
+  }
+
+@keyframes slide2 {
+    0%{
+        height: 100%;
+    }
+    100%{
+        height: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .cont{
+        width: 90%;
+    }
+    .cont  .hold{
+        display: flex;
+        flex-direction: column;
+    }
+    .h{
+        font-size: 24px;
+        padding-top: 0px;
+        color: #000;
+        font-family: MTNBrighterSans-Medium;
+        /* font-weight: 200; */
+    }
+    p{
+        color: #000;
+        font-size: 14px;
+        width: 80%;
+        margin: 0 0 10px;
+        /* white-space: wrap; */
+        font-family:  MTNBrighterSans-Regular;
+    }
+    .slider div>h1{
+ 
+        font-size: 15px;
+       
+    }
+}
